@@ -1,0 +1,3 @@
+Os clients de api as vezes podem dar erro entao da para abrir
+o localhost/docs e fazer as requisições por la
+(no caso do fastapi)
