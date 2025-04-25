@@ -8,6 +8,7 @@
 
 body{
     font-family: "Poppins", sans-serif;
+    background-color: rgb(233, 234, 236);
 }
 
 h1{
@@ -16,11 +17,16 @@ h1{
     padding: 3vh;
 }
 
+
 .dragon{
     display: grid;
-    
     justify-content: center;
     text-align: center;
     gap: 1vh;
     padding: 5vh;
+
+    img{
+        border: solid 2px rgb(139, 31, 31);
+        border-radius: 2vh;
+    }
 }

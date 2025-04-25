@@ -6,9 +6,9 @@ async function puxar_api() {
             const dragonDiv = document.createElement("div");
                 dragonDiv.classList.add("dragon");
                 dragonDiv.innerHTML = `
+                    <img src="${element.foto}"></img>
                     <h2>${element.nome}</h2>
                     <p>${element.categoria}</p>
-                    <img src="${element.foto}"></img>
                 `;
                 container.appendChild(dragonDiv);
         })
