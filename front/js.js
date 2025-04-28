@@ -3,7 +3,7 @@ async function criarSlider() {
         // Puxa os dados da API
         const response = await axios.get("http://localhost:8000/api/v1/dragon");
         const dragoes = response.data; // Lista de dragões recebida da API
-        const sliderDiv = document.getElementById("dragon-container"); // Seleciona o container principal
+        const sliderDiv = document.getElementById("dragon-container"); // Pegar o container principal
 
         // Cria o contêiner principal da lista (a div.list)
         const listDiv = document.createElement("div");
@@ -13,7 +13,7 @@ async function criarSlider() {
         // Define o número total de itens como variável CSS
         sliderDiv.style.setProperty("--quantity", dragoes.length);
 
-        // Cria dinamicamente os itens do slider
+        // Criar dinamicamente os itens do slider
         dragoes.forEach((dragon, index) => {
             const itemDiv = document.createElement("div");
             itemDiv.classList.add("item");
@@ -33,7 +33,7 @@ async function criarSlider() {
     }
 }
 
-// Função para abrir o modal com as informações do dragão
+
 function abrirModal(dragon) {
     const modal = document.getElementById("modal");
     const modalNome = document.getElementById("modal-nome");
@@ -72,6 +72,30 @@ document.getElementById("modal").addEventListener("click", (event) => {
         fecharModal();
     }
 });
+
+//O event.target quando você quer identificar exatamente onde o evento aconteceu.
+/*
+Exemplo:
+imagine uma lista simples:
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+
+document.querySelector("ul").addEventListener("click", (event) => {
+    console.log(event.target); // Mostra o elemento clicado
+});
+
+Se você clicar em Item 1, event.target será o <li> correspondente ao "Item 1".
+
+Se clicar em Item 2, event.target será o <li> correspondente ao "Item 2".
+
+target = para ver onde o evento aconteceu 
+exemplo : evento de click como no codigo 
+o target mostra onde aconteceu o click
+*/
 
 // Chama a função para criar o slider ao carregar a página
 criarSlider();
