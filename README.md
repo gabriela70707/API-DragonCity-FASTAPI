@@ -52,9 +52,8 @@ Aqui está um exemplo do projeto rodando:
 
 
 ## Observações
-- Caso tenha dúvidas, entre em contato 😊
+- Caso tenha dúvidas, entre em contato 😊: 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-%23FFC0CB)](https://www.linkedin.com/in/gabriela-alejandra-278b39355)      
-
 [![Email](https://img.shields.io/badge/-Email-%23FF99CC)](mailto:gabrielasantos70707@gmail.com)
 
 
