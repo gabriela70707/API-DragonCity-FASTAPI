@@ -101,6 +101,11 @@ h1{
     max-width: 500px;
     text-align: center;
 }
+
+.botoes{
+    padding: 3vh;
+}
+
 p{
     padding: 1vh;
 }

@@ -10,6 +10,7 @@
 <body>
     <div class="content">
         <h1>API Dragon City</h1>
+        <button>Adicionar Novos Dragões</button>
         <img src="./images/dragon_city.png" alt="">
 
         <div id="dragon-container" style="--width: 200px; --height: 200px;"></div>
@@ -20,13 +21,50 @@
                 <h2 id="modal-nome"></h2>
                 <p id="modal-categoria"></p>
                 <p id="modal-raridade"></p>
-                <img id="modal-foto" src="" alt="">
-                <img id="modal-foto-bebe" src="" alt="">
-                <img id="modal-foto-adulto" src="" alt="">
+                <div class="imagens">
+                    <img id="modal-foto" src="" alt="">
+                    <img id="modal-foto-bebe" src="" alt="">
+                    <img id="modal-foto-adulto" src="" alt="">
+                </div>
+                <div class="botoes">
+                    <button>Editar</button>
+                    <button>Excluir</button>
+                </div>
+
             </div>
         </div>
 
+
     </div>
+
+    <!-- Modal para adicionar novo dragão -->
+     <div id="modal-adicionar" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModalAdicionar()">&times;</span>
+            <h2>Adicionar Novo Dragão</h2>
+
+            <label>Nome:</label>
+            <input type="text" id="nome-dragao">
+
+            <label>Categoria:</label>
+            <input type="text" id="categoria-dragao">
+
+            <label>Raridade:</label>
+            <input type="text" id="raridade-dragao">
+
+            <label>Foto Ovo:</label>
+            <input type="file" id="foto-ovo">
+
+            <label>Foto Bebê:</label>
+            <input type="file" id="foto-bebe">
+
+            <label>Foto Jovem:</label>
+            <input type="file" id="foto-jovem">
+
+            <button onclick="salvarDragao()">Salvar</button>
+        </div>
+    </div>
+
     
     
     
