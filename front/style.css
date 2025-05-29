@@ -134,3 +134,29 @@ p{
     font-weight: bold;
     cursor: pointer;
 }
+
+button{
+    border: none;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(167, 54, 54);
+    color: aliceblue;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    
+}
+
+button:hover{
+    background-color: rgb(207, 78, 78);
+}
+
+.modal-content-adicionar{
+    display: grid;
+    gap: 12px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+}
