@@ -111,7 +111,8 @@ p{
 }
 
 .modal img {
-    max-width: 100%;
+    padding: 5px;
+    max-width: 30%;
     border-radius: 10px;
 }
 

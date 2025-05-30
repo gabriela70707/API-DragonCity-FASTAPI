@@ -128,13 +128,22 @@ document.querySelector("button").addEventListener("click", () => {
     modalAdicionar.classList.remove("hidden");
 });
 
-
 function fecharModalAdicionar() {
     document.getElementById("modal-adicionar").classList.add("hidden");
 }
 
+document.getElementById("modal-adicionar").addEventListener("click", (event) => {
+    const modalContent = document.querySelector(".modal-content-adicionar");
+    if (!modalContent.contains(event.target)) {
+        fecharModalAdicionar();
+    }
+});
+
+
+
+
+
 async function salvarDragao() {
-    console.log("Botão 'Salvar' foi clicado!");
 
     const nome = document.getElementById("nome-dragao").value;
     const categoria = document.getElementById("categoria-dragao").value;
@@ -245,7 +254,7 @@ async function salvarEdicaoDragao() {
     }
 
     try {
-        // Atualiza os dados do dragão
+        // Atualizar os dados do dragão
         await axios.put(`http://localhost:8000/api/v1/dragon/${dragonId}`, {
             nome: nome,
             categoria: categoria,
